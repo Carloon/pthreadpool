@@ -5,6 +5,12 @@ INCLUDE(GNUInstallDirs)
 # ---[ Project
 PROJECT(pthreadpool C CXX)
 
+#--- Runtime Verification Options
+SET(CMAKE_C_COMPILER    /mnt/hd2/carltonmills/bin/rvpc )
+SET(CMAKE_CXX_COMPILER  /mnt/hd2/carltonmills/bin/rvpc++ )
+SET(CMAKE_LINKER        /mnt/hd2/carltonmills/bin/rvpc )
+SET(CMAKE_LIBRARY_PATH  /mnt/hd2/carltonmills/lib )
+
 # ---[ Options.
 SET(PTHREADPOOL_LIBRARY_TYPE "default" CACHE STRING "Type of library (shared, static, or default) to build")
 SET_PROPERTY(CACHE PTHREADPOOL_LIBRARY_TYPE PROPERTY STRINGS default static shared)
