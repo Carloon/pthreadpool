@@ -1,6 +1,7 @@
 # Ninja files
 build.ninja
-
+#Built by Cmake but not used
+CMakeFiles
 # Build objects and artifacts
 deps/
 build/
